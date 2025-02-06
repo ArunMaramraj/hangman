@@ -14,7 +14,7 @@ let category = "";
 // Load a random word and its category
 const loadWord = () => {
   try {
-    const data = JSON.parse(fs.readFileSync('words.json', 'utf8'));
+ const data = JSON.parse(fs.readFileSync(path.join(__dirname, 'public', 'words.json'), 'utf8'));
     const categories = Object.keys(data);
     const randomCategory = categories[Math.floor(Math.random() * categories.length)];
     const randomWord = data[randomCategory][Math.floor(Math.random() * data[randomCategory].length)];
