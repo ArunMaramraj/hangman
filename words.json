@@ -1,0 +1,9 @@
+{
+  "Animals": ["tiger", "elephant", "dolphin", "monkey", "buffalo"],
+  "Body Parts": ["elbow", "ankle", "finger", "mouth", "thighs"],
+  "Countries": ["brazil", "canada", "germany", "egypt", "france", "spain"],
+  "Harry Potter characters": ["severus", "draco", "hagrid", "lupin", "neville", "slughorn", "cedric", "umbridge"],
+  "Genres": ["mystery", "fantasy", "horror", "romance", "thriller"],
+  "Companies": ["microsoft", "apple", "google", "amazon", "facebook", "tesla", "intel", "netflix", "ibm", "samsung"],
+  "Brands": ["nike", "adidas", "puma", "reebok", "gucci", "prada", "chanel", "zara"]
+}
