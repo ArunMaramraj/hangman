@@ -14,7 +14,15 @@ let category = "";
 // Load a random word and its category
 const loadWord = () => {
   try {
- const data = JSON.parse(fs.readFileSync(path.join(__dirname, 'public', 'words.json'), 'utf8'));
+ const data = {
+  "Animals": ["tiger", "elephant", "dolphin", "monkey", "buffalo"],
+  "Body Parts": ["elbow", "ankle", "finger", "mouth", "thighs"],
+  "Countries": ["brazil", "canada", "germany", "egypt", "france", "spain"],
+  "Harry Potter characters": ["severus", "draco", "hagrid", "lupin", "neville", "slughorn", "cedric", "umbridge"],
+  "Genres": ["mystery", "fantasy", "horror", "romance", "thriller"],
+  "Companies": ["microsoft", "apple", "google", "amazon", "facebook", "tesla", "intel", "netflix", "ibm", "samsung"],
+  "Brands": ["nike", "adidas", "puma", "reebok", "gucci", "prada", "chanel", "zara"]
+};
     const categories = Object.keys(data);
     const randomCategory = categories[Math.floor(Math.random() * categories.length)];
     const randomWord = data[randomCategory][Math.floor(Math.random() * data[randomCategory].length)];
