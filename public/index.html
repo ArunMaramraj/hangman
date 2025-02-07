@@ -121,7 +121,7 @@
     const hintButton = document.getElementById('hintButton');
 
     function updateGameState() {
-      fetch('https://hangman-xqzu.vercel.app/game-state')
+      fetch('https://hangman-mxug.vercel.app/game-state')
         .then(response => response.json())
         .then(data => {
           wordDisplay.textContent = data.revealedWord.join(' ');
@@ -137,7 +137,7 @@
 
       if (!letter) return;
 
-      fetch('https://hangman-xqzu.vercel.app/guess', {
+      fetch('https://hangman-mxug.vercel.app/guess', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -157,7 +157,7 @@
     }
 
       function refreshGame() {
-        fetch('https://hangman-xqzu.vercel.app/reset-game', {
+        fetch('https://hangman-mxug.vercel.app/reset-game', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
